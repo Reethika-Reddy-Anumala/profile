@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning — Reethika Reddy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">Reethika Reddy</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="learning.html" class="active">Learning</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <div class="hero" style="margin-bottom: 2.5rem;">
+    <div class="hero-tag">Technical Growth</div>
+    <h1>What I'm <span>learning</span></h1>
+    <p>Structured notes, patterns, and examples from my active interview preparation and day-to-day engineering work.</p>
+  </div>
+
+  <!-- AWS -->
+  <div id="aws" class="topic-group">
+    <div class="topic-group-header">
+      <span class="icon">☁️</span>
+      <h2>AWS</h2>
+    </div>
+    <ul class="topic-list">
+
+      <li class="topic-item">
+        <span class="dot blue"></span>
+        <div>
+          <div class="t-title">CloudWatch — Metrics, Logs, Alarms</div>
+          <div class="t-desc">Custom metrics via PutMetricData, log groups vs log streams, metric math, and alarm thresholds. Used in production at Factset for Lambda and EC2 monitoring.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot blue"></span>
+        <div>
+          <div class="t-title">X-Ray — Distributed Tracing</div>
+          <div class="t-desc">Trace propagation across Lambda and .NET services. Segments, subsegments, sampling rules, and service maps. Debugging latency spikes across microservices.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot blue"></span>
+        <div>
+          <div class="t-title">Lambda — Patterns and Cold Starts</div>
+          <div class="t-desc">Event sources (SQS, SNS, API Gateway), concurrency, provisioned concurrency for cold start mitigation, and Lambda layers for shared code.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot blue"></span>
+        <div>
+          <div class="t-title">SQS + SNS — Event-Driven Messaging</div>
+          <div class="t-desc">Standard vs FIFO queues, dead-letter queues, visibility timeout, fan-out pattern with SNS topics, and backpressure handling.</div>
+        </div>
+      </li>
+
+
+      <li class="topic-item">
+        <span class="dot blue"></span>
+        <div>
+          <div class="t-title">S3 — Storage Patterns</div>
+          <div class="t-desc">Presigned URLs, event notifications, lifecycle policies, multipart upload, and S3 as a trigger for Lambda pipelines.</div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- DSA -->
+  <div id="dsa" class="topic-group">
+    <div class="topic-group-header">
+      <span class="icon">🗂️</span>
+      <h2>DSA Patterns</h2>
+    </div>
+    <ul class="topic-list">
+
+      <li class="topic-item">
+        <span class="dot"></span>
+        <div>
+          <div class="t-title">HashMap / HashSet</div>
+          <div class="t-desc">Frequency counting, two-sum variants, grouping. Pattern: trade space for O(1) lookup. Examples: anagram grouping, subarray with target sum.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot"></span>
+        <div>
+          <div class="t-title">Two Pointers</div>
+          <div class="t-desc">Start+end pointers on sorted arrays, fast/slow pointers on linked lists. Examples: container with most water, cycle detection.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot"></span>
+        <div>
+          <div class="t-title">Sliding Window</div>
+          <div class="t-desc">Fixed and variable-size windows on arrays/strings. Pattern: expand right, shrink left when constraint violated. Examples: longest substring without repeating characters.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot"></span>
+        <div>
+          <div class="t-title">Binary Search</div>
+          <div class="t-desc">Search on sorted arrays, search on answer space. Examples: find minimum in rotated array, capacity to ship packages in D days.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot"></span>
+        <div>
+          <div class="t-title">Trees — DFS and BFS</div>
+          <div class="t-desc">In-order, pre-order, post-order traversal. Level-order (BFS with queue). Examples: max depth, lowest common ancestor, right side view.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot"></span>
+        <div>
+          <div class="t-title">Linked Lists</div>
+          <div class="t-desc">Reverse, detect cycle, merge sorted lists, find middle node. Pattern: dummy head node prevents edge cases.</div>
+        </div>
+      </li>
+
+
+    </ul>
+  </div>
+
+  <!-- SYSTEM DESIGN -->
+  <div id="system-design" class="topic-group">
+    <div class="topic-group-header">
+      <span class="icon">🏗️</span>
+      <h2>System Design</h2>
+    </div>
+    <ul class="topic-list">
+
+      <li class="topic-item">
+        <span class="dot orange"></span>
+        <div>
+          <div class="t-title">Rate Limiting</div>
+          <div class="t-desc">Token bucket vs sliding window algorithms. Redis-based distributed rate limiting. Applied to API Gateway throttling patterns.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot orange"></span>
+        <div>
+          <div class="t-title">Caching Strategies</div>
+          <div class="t-desc">Cache-aside, write-through, write-behind. Redis TTL strategies. Cache invalidation — the hard part. CDN edge caching for static assets.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot orange"></span>
+        <div>
+          <div class="t-title">Message Queues and Event Streaming</div>
+          <div class="t-desc">SQS for task queues, SNS fan-out, Kafka for high-throughput event streaming. At-least-once vs exactly-once delivery and idempotency.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot orange"></span>
+        <div>
+          <div class="t-title">Microservices Communication</div>
+          <div class="t-desc">Sync (REST, gRPC) vs async (events). Service discovery, circuit breakers (Polly in .NET), and handling partial failures gracefully.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot orange"></span>
+        <div>
+          <div class="t-title">Database Scaling</div>
+          <div class="t-desc">Read replicas, sharding strategies, connection pooling. SQL vs NoSQL trade-offs. Optimistic vs pessimistic locking for concurrent writes.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot orange"></span>
+        <div>
+          <div class="t-title">Observability</div>
+          <div class="t-desc">Metrics (Prometheus, CloudWatch), distributed tracing (X-Ray, Lightstep), structured logging (Serilog, Kibana). The three pillars and how they connect.</div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- SQL -->
+  <div id="sql" class="topic-group">
+    <div class="topic-group-header">
+      <span class="icon">🗃️</span>
+      <h2>SQL</h2>
+    </div>
+    <ul class="topic-list">
+
+      <li class="topic-item">
+        <span class="dot green"></span>
+        <div>
+          <div class="t-title">Window Functions</div>
+          <div class="t-desc">ROW_NUMBER, RANK, DENSE_RANK, LAG, LEAD, SUM OVER PARTITION. Used for ranking, running totals, and comparing rows without GROUP BY collapsing results.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot green"></span>
+        <div>
+          <div class="t-title">CTEs and Recursive CTEs</div>
+          <div class="t-desc">WITH clause for readable multi-step queries. Recursive CTEs for hierarchical data (org trees, folder structures). Much cleaner than nested subqueries.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot green"></span>
+        <div>
+          <div class="t-title">GROUP BY and HAVING</div>
+          <div class="t-desc">Aggregation with COUNT, SUM, AVG. HAVING filters aggregated groups (not WHERE). Grouping sets and ROLLUP for multi-level summaries.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot green"></span>
+        <div>
+          <div class="t-title">Joins Deep Dive</div>
+          <div class="t-desc">INNER, LEFT, RIGHT, FULL OUTER, CROSS JOIN. Self-joins for hierarchical comparisons. When each join type produces NULLs and why it matters.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot green"></span>
+        <div>
+          <div class="t-title">Indexing and Query Performance</div>
+          <div class="t-desc">Clustered vs non-clustered indexes. Covering indexes. Execution plans in SQL Server — when to use index scans vs seeks. Avoiding index-killing patterns (functions on columns).</div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- .NET / C# -->
+  <div id="dotnet" class="topic-group">
+    <div class="topic-group-header">
+      <span class="icon">⚙️</span>
+      <h2>.NET / C#</h2>
+    </div>
+    <ul class="topic-list">
+
+      <li class="topic-item">
+        <span class="dot"></span>
+        <div>
+          <div class="t-title">async / await internals</div>
+          <div class="t-desc">State machine compilation, SynchronizationContext, ConfigureAwait(false) for library code, deadlock scenarios, and ValueTask vs Task for hot paths.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot"></span>
+        <div>
+          <div class="t-title">LINQ</div>
+          <div class="t-desc">Deferred vs immediate execution, expression trees vs delegates, LINQ to SQL translation, and when to use AsNoTracking() in EF Core.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot"></span>
+        <div>
+          <div class="t-title">Dependency Injection and Lifetimes</div>
+          <div class="t-desc">Singleton vs Scoped vs Transient. Captive dependency problem (injecting Scoped into Singleton). Service locator anti-pattern.</div>
+        </div>
+      </li>
+
+
+      <li class="topic-item">
+        <span class="dot"></span>
+        <div>
+          <div class="t-title">EF Core</div>
+          <div class="t-desc">Migrations, change tracking, eager vs lazy loading, query performance with Include(), and raw SQL via FromSqlRaw for complex queries.</div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- AI / LLM -->
+  <div id="ai" class="topic-group">
+    <div class="topic-group-header">
+      <span class="icon">🤖</span>
+      <h2>AI / LLM Agents</h2>
+    </div>
+    <ul class="topic-list">
+
+      <li class="topic-item">
+        <span class="dot"></span>
+        <div>
+          <div class="t-title">MCP (Model Context Protocol)</div>
+          <div class="t-desc">Building tool servers that extend LLM capabilities. Understanding the client/server boundary, tool schemas, and how agents call external systems.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot"></span>
+        <div>
+          <div class="t-title">Tool Use and Agent Loops</div>
+          <div class="t-desc">How LLMs reason about tool calls, multi-step agent loops, and designing tools with clear inputs/outputs so the model uses them reliably.</div>
+        </div>
+      </li>
+
+      <li class="topic-item">
+        <span class="dot"></span>
+        <div>
+          <div class="t-title">Claude API</div>
+          <div class="t-desc">Messages API, system prompts, prompt caching, streaming responses, and integrating Claude into .NET and Python applications.</div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- CI/CD -->
+  <div class="topic-group">
+    <div class="topic-group-header">
+      <span class="icon">🚀</span>
+      <h2>CI/CD and DevOps</h2>
+    </div>
+    <ul class="topic-list">
+
+      <li class="topic-item">
+        <span class="dot blue"></span>
+        <div>
+          <div class="t-title">GitHub Actions</div>
+          <div class="t-desc">Workflow files, jobs vs steps, environment secrets, matrix builds, reusable workflows, and caching dependencies. Migrated Factset pipelines from Jenkins — 60% faster deployments.</div>
+        </div>
+      </li>
+
+
+    </ul>
+  </div>
+
+</main>
+
+<footer>
+  <p>Reethika Reddy · <a href="https://linkedin.com" target="_blank">LinkedIn</a> · Built with plain HTML/CSS</p>
+</footer>
+
+</body>
+</html>

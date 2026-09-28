@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Reethika Reddy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">Reethika Reddy</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="learning.html">Learning</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <div class="hero" style="margin-bottom: 2.5rem;">
+    <div class="hero-tag">Practical Work</div>
+    <h1>Projects &amp; <span>Experiments</span></h1>
+    <p>Things I built to apply what I'm learning — small but intentional. Each one reinforces a real concept.</p>
+  </div>
+
+  <section>
+    <div class="section-title">Projects</div>
+    <div class="card-grid">
+
+      <!-- Placeholder 1 -->
+      <div class="card">
+        <div class="card-icon">🔍</div>
+        <h3>AWS Observability Demo</h3>
+        <p>
+          A .NET Lambda function instrumented with CloudWatch custom metrics and X-Ray tracing.
+          Demonstrates how distributed traces propagate across two Lambda functions via SQS.
+        </p>
+        <div class="badge-row" style="margin-top: 0.75rem; margin-bottom: 0;">
+          <span class="badge cloud">AWS Lambda</span>
+          <span class="badge cloud">X-Ray</span>
+          <span class="badge cloud">SQS</span>
+          <span class="badge lang">.NET</span>
+        </div>
+        <a class="card-link" href="#">GitHub →</a>
+      </div>
+
+      <!-- Placeholder 2 -->
+      <div class="card">
+        <div class="card-icon">🤖</div>
+        <h3>MCP Tool Server</h3>
+        <p>
+          A custom MCP server built in Python that exposes internal tools to Claude.
+          Explored the protocol, tool schemas, and how agents invoke external capabilities.
+        </p>
+        <div class="badge-row" style="margin-top: 0.75rem; margin-bottom: 0;">
+          <span class="badge lang">Python</span>
+          <span class="badge lang">MCP</span>
+          <span class="badge lang">Claude API</span>
+        </div>
+        <a class="card-link" href="#">GitHub →</a>
+      </div>
+
+      <!-- Placeholder 3 -->
+      <div class="card">
+        <div class="card-icon">🗃️</div>
+        <h3>SQL Window Functions Playground</h3>
+        <p>
+          A set of SQL scripts with worked examples for ROW_NUMBER, RANK, LAG, LEAD, and running totals.
+          Written for SQL Server, each query has a real-world use case attached.
+        </p>
+        <div class="badge-row" style="margin-top: 0.75rem; margin-bottom: 0;">
+          <span class="badge db">SQL Server</span>
+          <span class="badge db">T-SQL</span>
+        </div>
+        <a class="card-link" href="#">GitHub →</a>
+      </div>
+
+      <!-- Placeholder 4 -->
+      <div class="card">
+        <div class="card-icon">🗂️</div>
+        <h3>DSA Pattern Practice</h3>
+        <p>
+          Solved problems organized by pattern — HashMap, Two Pointers, Sliding Window, Trees.
+          Each solution includes a plain-English explanation of the pattern before the code.
+        </p>
+        <div class="badge-row" style="margin-top: 0.75rem; margin-bottom: 0;">
+          <span class="badge lang">Python</span>
+          <span class="badge lang">C#</span>
+        </div>
+        <a class="card-link" href="#">GitHub →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Work experience projects -->
+  <section>
+    <div class="section-title">Notable Work at Factset</div>
+    <div class="timeline">
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">.NET Framework → Go Migration</div>
+            <div class="exp-company">Service Modernization</div>
+          </div>
+          <div class="exp-date">2024–2025</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Migrated a legacy .NET Framework service to Go, improving throughput and reducing memory usage</li>
+          <li>Replaced thread-pool-based concurrency with idiomatic Go goroutines for more efficient resource utilization</li>
+          <li>Delivered with zero downtime and full backward compatibility</li>
+        </ul>
+      </div>
+
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">Self-Service Workflow Replication</div>
+            <div class="exp-company">Internal Tooling</div>
+          </div>
+          <div class="exp-date">2024</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Built a bulk configuration copy tool that reduced a multi-hour manual process to under 3 minutes</li>
+          <li>Eliminated dependency on backend database queries for routine operational tasks</li>
+          <li>Added role-based access control to ensure governance without slowing down authorized users</li>
+        </ul>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">Priority-Based Queue Processing</div>
+            <div class="exp-company">Performance Engineering</div>
+          </div>
+          <div class="exp-date">2024–2025</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Designed a tiered priority system to ensure time-sensitive jobs are never blocked by lower-priority background work</li>
+          <li>Reduced processing start delays from 2+ hours to ~5 minutes during peak load</li>
+          <li>Improved SLA compliance and system predictability without increasing infrastructure cost</li>
+        </ul>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">UI Modernization</div>
+            <div class="exp-company">Vue 3 Migration</div>
+          </div>
+          <div class="exp-date">2024–2025</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Migrated legacy UI components to Vue 3 with FactSet Fusion design system</li>
+          <li>Reduced UX-related issues by 40% through reactive state management and cleaner component design</li>
+          <li>Improved maintainability and made the frontend consistent with modern component standards</li>
+        </ul>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">SQL Performance and Maintenance Automation</div>
+            <div class="exp-company">High-Volume Production Databases</div>
+          </div>
+          <div class="exp-date">2024–2025</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Tuned slow queries, added targeted indexes, and resolved fragmentation on high-volume production databases</li>
+          <li>Replaced manual maintenance windows (requiring planned downtime and multiple engineers) with fully automated scheduled jobs</li>
+          <li>Eliminated engineer on-call burden and improved query throughput year-round without downtime</li>
+        </ul>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">Incident Response and Postmortems</div>
+            <div class="exp-company">Production Reliability</div>
+          </div>
+          <div class="exp-date">2022–2025</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Led postmortem calls after critical production incidents — identifying root causes across application, API, database, and workflow layers</li>
+          <li>Drove remediation plans and follow-up action items to prevent recurrence</li>
+          <li>Used Grafana, Lightstep, Coralogix, and Sentry to diagnose issues quickly under live pressure</li>
+        </ul>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">CI/CD Pipeline Migration</div>
+            <div class="exp-company">Jenkins → GitHub Actions</div>
+          </div>
+          <div class="exp-date">2023</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Rebuilt all build and deploy pipelines using GitHub Actions workflows</li>
+          <li>Implemented secrets management, environment-based approvals, and matrix builds</li>
+          <li>Improved deployment speed by 60% and standardized automation across the team</li>
+        </ul>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">Observability Instrumentation</div>
+            <div class="exp-company">CloudWatch + X-Ray + Lightstep</div>
+          </div>
+          <div class="exp-date">2024–2025</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Added X-Ray distributed tracing to a chain of Lambda + SQS services</li>
+          <li>Created CloudWatch dashboards with custom metrics for workflow throughput and error rates</li>
+          <li>Integrated Lightstep for cross-service trace correlation</li>
+          <li>Reduced mean-time-to-diagnose latency issues from hours to minutes</li>
+        </ul>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">Vue 3 Frontend Rewrite</div>
+            <div class="exp-company">Legacy UI → Vue 3 + TypeScript</div>
+          </div>
+          <div class="exp-date">2022–2023</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Migrated a legacy jQuery-based frontend to Vue 3 with Composition API</li>
+          <li>Replaced direct DOM manipulation with reactive state management</li>
+          <li>Reduced UX-related bug reports by 40% within two quarters</li>
+          <li>Improved time-to-interactive by optimizing component lazy loading</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Reethika Reddy · <a href="https://linkedin.com" target="_blank">LinkedIn</a> · Built with plain HTML/CSS</p>
+</footer>
+
+</body>
+</html>
